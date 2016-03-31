@@ -21,11 +21,10 @@
 @phone-strict:   ~"only screen and (max-width: @{xs-min})";
 
 .text-message(){
-  width: 180px;
-  // border:1px solid black;
+  // width: 56%;
   padding: 10px;
   position:relative;
-  margin:20px auto;
+  // margin:20px auto;
   font-size:12px;
   font-family: Helvetica;
 }
@@ -79,7 +78,7 @@
     border-radius: 30px;
     background-color: #41ee96;
     position:absolute;
-    top:85px;
+    top:5px;
     right:35px;
     z-index:2;
     text-align:center;
@@ -99,17 +98,19 @@
   .chat-content{
     .receiver-chat{
       position:relative;
+      margin-bottom:20px;
       .profile-pic{
-        position:absolute;
-        top:0px;
-        right:25px;
-        width:30px;
-        height:30px;
+        // position:absolute;
+        // top:0px;
+        // right:25px;
+        // width:30px;
+        // height:30px;
         a{
           background-image:url('../assets/profile_avatar.png');
           background-size: 100% 100%;
           width:40px;
           height:40px;
+          float:left;
           display:block;
           text-decoration:none;
         }
@@ -132,15 +133,17 @@
     }
     .sender-chat{
       position:relative;
+      margin-bottom:20px;
       .profile-pic{
-        position:absolute;
-        top:0px;
-        left:15px;
-        width:30px;
-        height:30px;
+        // position:absolute;
+        // top:0px;
+        // left:15px;
+        // width:30px;
+        // height:30px;
         a{
           background-image:url('../assets/profile_avatar.png');
           background-size: 100% 100%;
+          float:right;
           width:40px;
           height:40px;
           display:block;
@@ -163,20 +166,21 @@
       }
     }
   }
-  .message-box{
-    width: 100%;
-    box-sizing: border-box;
-    input[type=text] {
-      -webkit-appearance: none; -moz-appearance: none;
-      display: block;
-      margin: 0;
-      padding:15px;
-      width:auto;
-      height: 40px;
-      line-height: 40px; font-size: 17px;
-      border: 1px solid #bbb;
-    }
-  }
+  // width: 100%;
+  // box-sizing: border-box;
+  // position:absolute;
+  // bottom:10px;
+  // left:0;
+  // color:white;
+  // font-family: Helvetica;
+  // font-size: 12px;
+  // text-align:center;
+  // .btn-text{
+  //   background-color: @btn_init;
+  //   margin: 0 15px;
+  //   padding:18px 0px;
+  //
+  // }
 }
 &.touched{
   -webkit-transition: background-color 1s;
@@ -237,4 +241,35 @@
 
     }
   }
+  .form-box {
+    position:absolute;
+    bottom:10px;
+    .message-box{
+      // position:absolute;
+      // bottom:10px;
+      font-family: Helvetica;
+      font-size: 12px;
+      input[type=text] {
+        -webkit-appearance: none; -moz-appearance: none;
+        display: block;
+        // margin: 0 auto;
+        padding:5%;
+        width:90%;
+        height: 20px;
+        line-height: 20px;
+        border: 1px solid #fff;
+      }
+      .pin{
+        background-image: url('../assets/pin.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        position:absolute;
+        top:-2px;
+        left:-10px;
+        width:11px;
+        height:10px;
+      }
+    }
+  }
+
 }

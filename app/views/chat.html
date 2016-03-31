@@ -1,22 +1,21 @@
 <header-nav></header-nav>
 <div class="chat-container">
 <div class="chat-content">
-  <div class="receiver-chat">
-    <div class="profile-pic"><a ng-href="#/">&nbsp;</a></div>
-    <div class="text-message"><span class="pin">&nbsp;</span>{{message}}</div>
+  <div class="receiver-chat row">
+    <div class="text-message column column-9 col-span-1-left"><span class="pin">&nbsp;</span>{{message}}</div>
+    <div class="profile-pic column column-2"><a ng-href="#/">&nbsp;</a></div>
   </div>
   <div ng-repeat="archivemessage in messages">
-    <div class="sender-chat">
-      <div class="profile-pic"><a ng-href="#/">&nbsp;</a></div>
-      <div class="text-message"><span class="pin">&nbsp;</span>{{archivemessage}}</div>
+    <div class="sender-chat row">
+      <div class="profile-pic column column-2"><a ng-href="#/">&nbsp;</a></div>
+      <div class="text-message column column-9  col-span-1-right"><span class="pin">&nbsp;</span>{{archivemessage}}</div>
     </div>
   </div>
 </div>
-<!-- <p class="welcome-message">{{message}}<a ng-href="#/">OK</a></p>
-<div ng-repeat="archivemessage in messages">
-  <p>{{archivemessage}}</p>
-</div> -->
-<form class="message-box" ng-submit="addMessage(newmessage)">
-  <input type="text" ng-model="newmessage" placeholder="Write a message ..." />
-</form>
+</div>
+<div class="form-box row">
+  <form class="message-box column column-10 col-span-1-left" ng-submit="addMessage(newmessage)">
+    <span class="pin">&nbsp;</span>
+    <input type="text" ng-model="newmessage" placeholder="Write a message ..." />
+  </form>
 </div>

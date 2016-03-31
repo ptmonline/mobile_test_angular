@@ -52,7 +52,7 @@
   border-radius: 30px;
   background-color: #41ee96;
   position: absolute;
-  top: 85px;
+  top: 5px;
   right: 35px;
   z-index: 2;
   text-align: center;
@@ -70,27 +70,20 @@
 }
 .container .chat-container .chat-content .receiver-chat {
   position: relative;
-}
-.container .chat-container .chat-content .receiver-chat .profile-pic {
-  position: absolute;
-  top: 0px;
-  right: 25px;
-  width: 30px;
-  height: 30px;
+  margin-bottom: 20px;
 }
 .container .chat-container .chat-content .receiver-chat .profile-pic a {
   background-image: url('../assets/profile_avatar.png');
   background-size: 100% 100%;
   width: 40px;
   height: 40px;
+  float: left;
   display: block;
   text-decoration: none;
 }
 .container .chat-container .chat-content .receiver-chat .text-message {
-  width: 180px;
   padding: 10px;
   position: relative;
-  margin: 20px auto;
   font-size: 12px;
   font-family: Helvetica;
   background-color: #4abae0;
@@ -108,27 +101,20 @@
 }
 .container .chat-container .chat-content .sender-chat {
   position: relative;
-}
-.container .chat-container .chat-content .sender-chat .profile-pic {
-  position: absolute;
-  top: 0px;
-  left: 15px;
-  width: 30px;
-  height: 30px;
+  margin-bottom: 20px;
 }
 .container .chat-container .chat-content .sender-chat .profile-pic a {
   background-image: url('../assets/profile_avatar.png');
   background-size: 100% 100%;
+  float: right;
   width: 40px;
   height: 40px;
   display: block;
   text-decoration: none;
 }
 .container .chat-container .chat-content .sender-chat .text-message {
-  width: 180px;
   padding: 10px;
   position: relative;
-  margin: 20px auto;
   font-size: 12px;
   font-family: Helvetica;
   background-color: #ffffff;
@@ -142,22 +128,6 @@
   left: -9px;
   width: 11px;
   height: 10px;
-}
-.container .chat-container .message-box {
-  width: 100%;
-  box-sizing: border-box;
-}
-.container .chat-container .message-box input[type=text] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  display: block;
-  margin: 0;
-  padding: 15px;
-  width: auto;
-  height: 40px;
-  line-height: 40px;
-  font-size: 17px;
-  border: 1px solid #bbb;
 }
 .container.touched {
   -webkit-transition: background-color 1s;
@@ -215,4 +185,32 @@
   background-color: #3a3a3a;
   margin: 0 15px;
   padding: 18px 0px;
+}
+.container .form-box {
+  position: absolute;
+  bottom: 10px;
+}
+.container .form-box .message-box {
+  font-family: Helvetica;
+  font-size: 12px;
+}
+.container .form-box .message-box input[type=text] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  display: block;
+  padding: 5%;
+  width: 90%;
+  height: 20px;
+  line-height: 20px;
+  border: 1px solid #fff;
+}
+.container .form-box .message-box .pin {
+  background-image: url('../assets/pin.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: -2px;
+  left: -10px;
+  width: 11px;
+  height: 10px;
 }
