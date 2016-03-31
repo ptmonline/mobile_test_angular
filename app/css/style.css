@@ -1,8 +1,12 @@
+.wrapper {
+  background: #eceaeb;
+}
 .container {
   width: 435px;
   height: 773px;
   margin: 0 auto;
   position: relative;
+  background: #eceaeb;
 }
 @media only screen and (max-width: 480px) {
   .container {
@@ -17,6 +21,7 @@
 }
 .container .profile-container {
   position: relative;
+  margin-top: 80px;
 }
 .container .profile-container .user-avatar {
   position: relative;
@@ -45,7 +50,7 @@
   width: 60px;
   height: 60px;
   border-radius: 30px;
-  background-color: #9bf6cb;
+  background-color: #41ee96;
   position: absolute;
   top: 85px;
   right: 35px;
@@ -58,6 +63,101 @@
   display: block;
   font-size: 11px;
   font-family: Helvetica;
+}
+.container .chat-container {
+  position: relative;
+  margin-top: 80px;
+}
+.container .chat-container .chat-content .receiver-chat {
+  position: relative;
+}
+.container .chat-container .chat-content .receiver-chat .profile-pic {
+  position: absolute;
+  top: 0px;
+  right: 25px;
+  width: 30px;
+  height: 30px;
+}
+.container .chat-container .chat-content .receiver-chat .profile-pic a {
+  background-image: url('../assets/profile_avatar.png');
+  background-size: 100% 100%;
+  width: 40px;
+  height: 40px;
+  display: block;
+  text-decoration: none;
+}
+.container .chat-container .chat-content .receiver-chat .text-message {
+  width: 180px;
+  padding: 10px;
+  position: relative;
+  margin: 20px auto;
+  font-size: 12px;
+  font-family: Helvetica;
+  background-color: #4abae0;
+  color: white;
+}
+.container .chat-container .chat-content .receiver-chat .text-message .pin {
+  background-image: url('../assets/pin-blue.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 0px;
+  right: -10px;
+  width: 11px;
+  height: 10px;
+}
+.container .chat-container .chat-content .sender-chat {
+  position: relative;
+}
+.container .chat-container .chat-content .sender-chat .profile-pic {
+  position: absolute;
+  top: 0px;
+  left: 15px;
+  width: 30px;
+  height: 30px;
+}
+.container .chat-container .chat-content .sender-chat .profile-pic a {
+  background-image: url('../assets/profile_avatar.png');
+  background-size: 100% 100%;
+  width: 40px;
+  height: 40px;
+  display: block;
+  text-decoration: none;
+}
+.container .chat-container .chat-content .sender-chat .text-message {
+  width: 180px;
+  padding: 10px;
+  position: relative;
+  margin: 20px auto;
+  font-size: 12px;
+  font-family: Helvetica;
+  background-color: #ffffff;
+}
+.container .chat-container .chat-content .sender-chat .text-message .pin {
+  background-image: url('../assets/pin.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: -2px;
+  left: -9px;
+  width: 11px;
+  height: 10px;
+}
+.container .chat-container .message-box {
+  width: 100%;
+  box-sizing: border-box;
+}
+.container .chat-container .message-box input[type=text] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  display: block;
+  margin: 0;
+  padding: 15px;
+  width: auto;
+  height: 40px;
+  line-height: 40px;
+  font-size: 17px;
+  border: 1px solid #bbb;
 }
 .container.touched {
   -webkit-transition: background-color 1s;
@@ -73,7 +173,9 @@
   background-color: #3a3a3a;
   color: white;
   padding-top: 10px;
-  position: relative;
+  position: fixed;
+  top: 0;
+  z-index: 999;
 }
 .container .header .back-btn {
   left: 15px;
