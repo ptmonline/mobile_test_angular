@@ -87,6 +87,11 @@
 .container .header .back-btn a {
   color: white;
   text-decoration: none;
+  background-image: url("../assets/back_btn.png");
+  background-size: 100% 100%;
+  width: 30px;
+  height: 30px;
+  display: block;
 }
 .container .header .user-name {
   font-family: Helvetica;

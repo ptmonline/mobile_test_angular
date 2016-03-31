@@ -1,6 +1,6 @@
 <div class="profile-container" ng-controller="MyController">
   <header-nav></header-nav>
-  <div class="user-online"ng-show="isOnline"><span>ONLINE</span></div>
+  <online-status></online-status>
   <div class="user-avatar"><a ng-href="#/chat"><img src="assets/profile_avatar.png" width="228" height="221" alt="users avatar profile picture" /></a></div>
   <div class="user-information">
     <div class="user-name">{{profileName}}, {{age}}</div>
