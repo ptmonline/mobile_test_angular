@@ -1,0 +1,8 @@
+<header-nav></header-nav>
+<p class="welcome-message">{{message}}<a ng-href="#/">OK</a></p>
+<div ng-repeat="archivemessage in messages">
+  <p>{{archivemessage}}</p>
+</div>
+<form ng-submit="addMessage(newmessage)">
+  <input type="text" ng-model="newmessage" />
+</form
